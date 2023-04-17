@@ -1,0 +1,31 @@
+.select {
+  position: relative;
+
+  &:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../i/icons/caret.svg');
+    background-position: center;
+    background-size: cover;
+    width: 8px;
+    height: 4px;
+  }
+  select {
+    cursor: pointer;
+    width: fit-content;
+    padding: 0 8px 0 0;
+    border: none;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    @include r(1000){
+      font-size: 14px;
+    }
+  }
+
+}

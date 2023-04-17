@@ -1,0 +1,47 @@
+.sort {
+  &__block {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    @include r(576) {
+      justify-content: flex-start;
+      margin-top: 15px;
+    }
+  }
+  &__btn {
+    position: relative;
+    input {
+      position: absolute;
+      visibility: hidden;
+      &:checked + label {
+        background-color: $dark;
+        color: $white;
+        border-color: $dark;
+      }
+    }
+    label {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: $dark;
+      display: block;
+      padding: 8px 20px;
+      border-width: 2px 2px 2px 0px;
+      border-style: solid;
+      border-color: #EBEBEB;
+    }
+    &:last-child {
+      label {
+        border-radius: 0px 8px 8px 0px;
+      }
+    }
+    &:first-child {
+      label {
+        border-radius: 8px 0px 0px 8px;
+        border-width: 2px;
+      }
+    }
+  }
+}

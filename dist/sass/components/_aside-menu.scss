@@ -1,0 +1,42 @@
+aside {
+  padding-top: 16px;
+}
+.aside-nav {
+  padding: 0;
+  margin: 0;
+  @include r(1200) {
+    margin-bottom: 30px;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 8px 12px;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+    svg {
+      width: 24px;
+      margin-right: 8px;
+    }
+    svg,path {
+      stroke: $secondary;
+    }
+    &:hover {
+      color: $orange;
+    }
+    &.active {
+      background-color: $orange;
+      color: $white;
+      svg,path {
+        stroke: $white;
+      }
+    }
+
+  }
+}

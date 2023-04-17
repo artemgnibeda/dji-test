@@ -1,0 +1,28 @@
+.btn {
+  font-family: $main-font;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 7px 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+  &_orange {
+    border-color: $orange;
+    background-color: $orange;
+    color: $white;
+    &:hover {
+      color: $orange;
+      background-color: transparent;
+    }
+  }
+  &_transparent {
+    color: $dark;
+    border-color: $border;
+    &:hover {
+      border-color: $dark;
+      background-color: $dark;
+      color: $white;
+    }
+  }
+}

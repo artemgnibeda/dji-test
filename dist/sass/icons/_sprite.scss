@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  color: currentColor;
+  line-height: 1em;
+}
+
+.icon-chevron {
+  @extend %icon-chevron;
+}
+.icon-search {
+  @extend %icon-search;
+}
+.icon-pic {
+  @extend %icon-pic;
+}
+.icon-smile {
+  @extend %icon-smile;
+}
+.icon-time {
+  @extend %icon-time;
+}
+.icon-delete {
+  @extend %icon-delete;
+}

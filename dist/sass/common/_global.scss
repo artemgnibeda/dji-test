@@ -1,0 +1,84 @@
+body {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $main-font;
+  height: 72px;
+  background: $bg;
+  color: $secondary;
+  &.dark-theme {
+    background-color: $invert-bg;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 0 auto;
+  padding-top: 112px;
+  @include r(1000) {
+    padding-top: 70px;
+  }
+}
+
+header,footer {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+a {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.h1-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: $dark;
+}
+
+.h2-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: $dark;
+  margin-bottom: 4px;
+}
+
+.subtitle__small {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+input[type="search"],
+input[type="text"],
+input[type="file"],
+input[type="password"],
+input[type="submit"],
+input[type="email"],
+input[type="tel"],
+textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  resize: none;
+  outline:none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no"/>
+  <title>{{ title }}</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="./images/favicon/favicon-32x32.png"/>
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="./images/favicon/favicon-16x16.png"/>
+  <link rel="stylesheet" type="text/css" href="./css/lib.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <style>
+    :root {
+      --white: #fff;
+      --black: #000;
+      --dark: #292929;
+      --secondary: #666666;
+      --orange: #ED7135;
+      --border: #EBEBEB;
+      --gray1: #EEEEEE;
+      --bg: #FFF;
+      --invert-bg: #000;
+    }
+  </style>
+</head>
+<body>
+<noscript>
+  <div class="noscript">
+    <strong>
+      Для полной функциональности этого сайта необходимо включить JavaScript. Вот
+      <a href="" target="_blank">инструкции,</a>
+      как включить JavaScript в вашем браузере.
+    </strong>
+  </div>
+</noscript>
+<!--if lte IE 8
+p.off-js
+  | Ваш браузер устарел, пожалуйста
+  b обновите
+  |  его.
+-->
+{% block content %}
+{% endblock %}
+
+<script src="js/lib.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
